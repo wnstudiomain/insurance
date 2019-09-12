@@ -1,5 +1,7 @@
 # insurance
 
+Застрахуй братуху, застрахуй 
+
 > Nuxt.js project
 
 ## Build Setup
