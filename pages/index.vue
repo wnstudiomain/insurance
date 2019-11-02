@@ -1,65 +1,65 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        insurance
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+<main>
+  <section class="home">
+    <div class="home-wrapper container is-widescreen">
+      <div class="date">
+        <div class="calendar">
+          <ul>
+            <li>
+              <img src="~/assets/img/calendar.svg">
+              <span>
+                7 дек. 2019 г.
+              </span>
+            </li>
+            <li>
+              <img src="~/assets/img/placeholder.svg">
+              <span>
+                ТЦ Мегагринн, зал «Соловьиный»
+              </span>
+            </li>
+          </ul>
+        </div>
+        <h1>
+          Бизнес-конференция <br> «Управление со смыслом»
+        </h1>
+        <p class="sub-title">
+          Прокачай свои лидерские и управленческие навыки. Успейте зрегистрироваться, количество мест ограничено
+        </p>
+        <div class="buttons">
+          <a class="button main-button">Принять участие!</a>
+        </div>
       </div>
+      <a class="scroll-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet" class="mouse"><g fill="none" fill-rule="evenodd"><rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"></rect> <circle cx="36.5" cy="31.5" r="4.5" fill="#FFF" class="scroll"></circle></g></svg>
+      </a>
     </div>
   </section>
+  <section class="about">
+    <div class="container">
+    <div class="about-wrapper">
+      <h2>
+        О встрече
+      </h2>
+      <p class="subtitle">
+        Будь среди лидеров изменений! Данная встреча — это открытая площадка для ключевых руководителей предприятий нашего города, для лидеров транфоомаций и изменений, для проактивных управленцев! Бросьте вызов десяткам управленцев и попадите в сообщество лидеров, которые определят будущее курской области.
+      </p>
+      <p class="free">Участие бесплатное</p>
+    </div>
+    </div>
+  </section>
+  <section class="for">
+    <div class="container">
+      <h2>
+        Для кого
+      </h2>
+      <p class="subtitle">
+
+      </p>
+    </div>
+  </section>
+</main>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 
-export default {
-  components: {
-    AppLogo
-  }
-}
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
-

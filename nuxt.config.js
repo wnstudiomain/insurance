@@ -10,9 +10,13 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
+  css: [
+    { src: 'bulma', lang: 'sass' },
+    '@/assets/css/main.css'
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -36,4 +40,3 @@ module.exports = {
     }
   }
 }
-
