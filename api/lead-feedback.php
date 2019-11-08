@@ -7,10 +7,10 @@ $post = $_POST["post"];
 $company = $_POST["company"];
 $experience = $_POST["experience"];
 $interests = $_POST["interests"];
-$subject = "".$city." / ".$tasting." / ".$name." / ".$phone." / ".date('m-d-Y')."";
+$subject = "".$name." / ".$phone." / ".date('m-d-Y')."";
 $to = "hn@wnstudio.ru";
 
-$headers = "From: " . strip_tags("info@nasladdin.ru") . "\r\n";
+$headers = "From: " . strip_tags("leader@keaz.ru") . "\r\n";
 $headers .= "Content-type: text/html; charset=utf-8\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 // $text =  "Написал(а): $surname $name\n Контактный телефон - $phone\n email - $email \n\n $text \n\n $tasting \n\n";
@@ -19,6 +19,10 @@ $msg .= "<h2 style='font-weight:bold;border-bottom:1px solid #ccc;'>Cообще�
 $msg .= "<p><strong>От кого:</strong> ".$name."</p>\r\n";
 $msg .= "<p><strong>Телефон:</strong> ".$phone."</p>\r\n";
 $msg .= "<p><strong>Email:</strong> ".$email."</p>\r\n";
+$msg .= "<p><strong>Должность:</strong> ".$post."</p>\r\n";
+$msg .= "<p><strong>Компания:</strong> ".$company."</p>\r\n";
+$msg .= "<p><strong>Опыт:</strong> ".$experience."</p>\r\n";
+$msg .= "<p><strong>Интересы:</strong> ".$interests."</p>\r\n";
 $msg .= "</body></html>";
 
 

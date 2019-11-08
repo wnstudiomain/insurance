@@ -48,7 +48,24 @@
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true
-          }
+          },
+                   breakpoints: {
+            1024: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 40
+            },
+            768: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              spaceBetween: 20
+            },
+      }
         }
       }
     }

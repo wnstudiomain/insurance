@@ -8,7 +8,7 @@
           <label>Ваше имя</label>
           <span class="focus-border"></span>
         </div>
-        <p class="help is-danger error-message" v-if="!$v.name.required">Это поле обязательно для заполнения</p>
+        <p class="help is-danger error-message" v-if="$v.name.required">Это поле обязательно для заполнения</p>
       </div>
       <div class="form-input">
         <div class="field">
@@ -86,7 +86,7 @@
     </div>
     <div class="buttons">
       <button class="button main-button" type="submit">Участвовать</button>
-          <p class="sec">
+          <p class="secp">
       Нажимая кнопку "Участвовать" вы соглашаетесь с условиями <a href="https://keaz.ru/help/support/politika-konfidencialnosti"> Политики конфедециальности </a>
     </p>
       </div>
@@ -130,27 +130,23 @@
       phone: {
         required
       },
-      password: {
-        required,
-        minLength: minLength(6)
-      }
     },
     methods: {
       async onSubmit () {
         this.$v.$touch()
-        let rawData = {
-                name: this.name,
-                email: this.email,
-                phone: this.phone
-              }
+        if (this.$v.$anyError) {
+				return
+			}
         let formData = new FormData();
-        formData.append('data', rawData);
+        formData.append('name', this.name);
+        formData.append('email', this.email);
+        formData.append('phone', this.phone);
         formData.append('post', this.post);
         formData.append('company', this.company);
         formData.append('experience', this.experience);
         formData.append('interests', this.interests);
         console.log( formData );
-        await this.$axios.post('http://kubik46.ru/lead-feedback.php', formData, {
+        await this.$axios.post('http://hunter.wnstudio.ru/api/lead-feedback.php', formData, {
 				  headers: {
 					  'Content-Type': 'multipart/form-data'
 				  }

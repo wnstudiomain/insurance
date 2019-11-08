@@ -26,26 +26,17 @@
             Прокачай свои управленческие навыки. Будь среди лидеров изменений. Количество мест ограничено.
           </p>
           <div class="buttons">
-            <a class="button main-button">Принять участие!</a>
+            <a href="#" v-scroll-to="'#registration'" class="button main-button">Принять участие!</a>
           </div>
                      <div class="main-sponsor">
               <img src="~/assets/img/sponsor2-m.png" />
               <img src="~/assets/img/sponsor3-m.png" />
               <img src="~/assets/img/keaz-m.svg" />
             </div>
-          <!-- <a class="scroll-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet"
-              class="mouse">
-              <g fill="none" fill-rule="evenodd">
-                <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"></rect>
-                <circle cx="36.5" cy="31.5" r="4.5" fill="#FFF" class="scroll"></circle>
-              </g>
-            </svg>
-          </a> -->
         </div>
       </div>
     </section>
-    <section class="about main-block">
+    <section class="about main-block" id="about">
       <div class="container">
         <div class="about-wrapper">
           <h2>
@@ -73,8 +64,8 @@
         <p class="subtitle">
           для всех, кто хочет развиваться в управленческой деятельности
         </p>
-        <div class="columns is-mobile for-items border-items">
-          <div class="column">
+        <div class="columns for-items border-items">
+          <div class="column is-4">
             <div class="for-item">
               <img src="~/assets/img/pen.svg" />
               <h3>Создать</h3>
@@ -83,7 +74,7 @@
               </p>
             </div>
           </div>
-          <div class="column">
+          <div class="column is-4">
             <div class="for-item">
               <img src="~/assets/img/idea.svg" />
               <h3>Обрести</h3>
@@ -92,7 +83,7 @@
               </p>
             </div>
           </div>
-          <div class="column">
+          <div class="column is-4">
             <div class="for-item">
               <img src="~/assets/img/progress-circles.svg" />
               <h3>Перезагрузиться</h3>
@@ -102,8 +93,8 @@
             </div>
           </div>
         </div>
-        <div class="columns is-mobile for-items">
-          <div class="column">
+        <div class="columns for-items padding-mobile">
+          <div class="column is-4">
             <div class="for-item">
               <img src="~/assets/img/find.svg" />
               <h3>раскрыть</h3>
@@ -112,7 +103,7 @@
               </p>
             </div>
           </div>
-          <div class="column">
+          <div class="column is-4">
             <div class="for-item">
               <img src="~/assets/img/magic.svg" />
               <h3>Усилить</h3>
@@ -121,7 +112,7 @@
               </p>
             </div>
           </div>
-          <div class="column">
+          <div class="column is-4">
             <div class="for-item">
               <img src="~/assets/img/checklist.svg" />
               <h3>реализовать</h3>
@@ -133,7 +124,7 @@
         </div>
       </div>
     </section>
-    <section class="schedule main-block">
+    <section class="schedule main-block" id="schedule">
       <div class="container">
         <h2>Программа</h2>
         <p class="subtitle">
@@ -225,10 +216,10 @@
     </section>
     <section class="timer-block main-block">
       <div class="container">
-        <timer starttime="Nov 5, 2019 15:37:25" endtime="Nov 8, 2019 16:37:25"></timer>
+        <timer starttime="Nov 5, 2019 15:37:25" endtime="Dec 7, 2019 09:00:00"></timer>
       </div>
     </section>
-    <section class="game main-block">
+    <section class="game main-block" id="game">
       <div class="container">
         <div class="game-description">
           <span>бизнес-игра</span>
@@ -246,7 +237,7 @@
           <p>Постройте качественные коммуникации, чтобы победить в бизнес-игре</p>
         </div>
         <span>Условия игры</span>
-        <div class="columns is-mobile">
+        <div class="columns">
           <div class="column">
             <div class="conditions">
               <div class="box-game">
@@ -295,14 +286,14 @@
                 </div>
               </div>
               <div class="buttons">
-                <a class="button main-button">Принять участие!</a>
+                <a href="#" v-scroll-to="'#registration'" class="button main-button">Принять участие!</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="workshop main-block">
+    <section class="workshop main-block" id="workshop">
       <div class="container">
         <div class="work-shop-wrapper">
           <span>МАСТЕР-КЛАСС</span>
@@ -310,7 +301,7 @@
             Создание смыслов в управлении
           </h2>
           <div class="work-shop__items">
-            <div class="columns is-mobile work-shop__columns">
+            <div class="columns work-shop__columns">
               <div class="column work-shop__block">
                 <p>
                   <span>Блок 1.</span> Карта организационного развития. От миссии и ценностей к системе управления
@@ -323,7 +314,7 @@
                 </faq>
               </div>
             </div>
-            <div class="columns is-mobile work-shop__columns">
+            <div class="columns work-shop__columns">
               <div class="column work-shop__block">
                 <p>
                   <span>Блок 2.</span> Вызовы современного лидера: организационные и культурные факторы успеха
@@ -335,7 +326,7 @@
                 </faq>
               </div>
             </div>
-            <div class="columns is-mobile work-shop__columns">
+            <div class="columns work-shop__columns">
               <div class="column work-shop__block">
                 <p>
                   <span>Блок 3.</span> Матрица диагностики ценностей
@@ -348,7 +339,7 @@
                 </faq>
               </div>
             </div>
-            <div class="columns is-mobile work-shop__columns">
+            <div class="columns work-shop__columns">
               <div class="column work-shop__block">
                 <p>
                   <span>Блок 4.</span> Семь типов сознательности современной организации. Управление со смыслом по
@@ -363,7 +354,7 @@
                 </faq>
               </div>
             </div>
-            <div class="columns is-mobile work-shop__columns">
+            <div class="columns work-shop__columns">
               <div class="column work-shop__block">
                 <p>
                   <span>Блок 5.</span> Пять граней лидерства: директивный, вовлекающий, командообразующий, визионерский
@@ -379,7 +370,7 @@
                 </faq>
               </div>
             </div>
-            <div class="columns is-mobile work-shop__columns">
+            <div class="columns work-shop__columns">
               <div class="column work-shop__block">
                 <p>
                   <span>Блок 6.</span> Квадрант Офмана
@@ -400,7 +391,7 @@
       <div class="container">
         <h2>Зачем идти</h2>
         <div class="why-items">
-          <div class="columns is-mobile">
+          <div class="columns">
             <div class="why-wrapper column">
               <div class="why-wrapper__title">
                 <span class="number-why">
@@ -422,7 +413,7 @@
               </div>
             </div>
           </div>
-          <div class="columns is-mobile why-2">
+          <div class="columns why-2">
             <div class="why-wrapper column">
               <div class="why-wrapper__title">
                 <span class="number-why">
@@ -444,7 +435,7 @@
               </div>
             </div>
           </div>
-          <div class="columns is-mobile">
+          <div class="columns">
             <div class="why-wrapper column">
               <div class="why-wrapper__title">
                 <span class="number-why">
@@ -469,11 +460,11 @@
         </div>
       </div>
     </section>
-    <section class="main-block speakers">
+    <section class="main-block speakers" id="speakers">
       <div class="container">
         <h2>Спикеры</h2>
         <div class="speakers-items">
-          <div class="columns is-mobile">
+          <div class="columns">
             <div class="column">
               <div class="speakers-wrapper">
                 <div class="speaker-1">
@@ -508,7 +499,7 @@
     <section class="sponsors main-block">
       <div class="container">
         <h2>Организаторы</h2>
-        <div class="sponsor">
+        <div class="sponsor columns">
           <div class="sponsor-item">
             <img src="~/assets/img/AI-1.svg" />
             <p>Курский электроаппаратный завод</p>
@@ -532,10 +523,10 @@
         </div>
       </div>
     </section>
-    <section class="main-block">
+    <section class="main-block" id="registration">
       <div class="container">
         <h2>Регистрация</h2>
-        <vueliForm/>
+        <vueliForm />
       </div>
     </section>
   </main>

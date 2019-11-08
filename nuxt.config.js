@@ -31,6 +31,7 @@ module.exports = {
   ],
   modules: [
     '@nuxtjs/axios',
+    ['vue-scrollto/nuxt', { offset: -60 }]
   ],
   axios: {
     // proxyHeaders: false
