@@ -470,7 +470,7 @@ p.about-subtitle {
 }
 
 .schedule {
-  background-image: linear-gradient(-20deg, #2b5876 0%, #0D2D4E 100%);
+  background-color: #002F6B;
   padding-bottom: 50px;
 }
 
@@ -1018,7 +1018,16 @@ p.about-subtitle {
 .siper-partners {
   justify-content: center;
   align-content: center;
+  display: flex;
   text-align: center;
+
+}
+
+.siper-partners img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  display: inline-flex
 }
 
 .partners-wrapper .swiper-pagination-bullet-active {
@@ -1275,9 +1284,7 @@ select.form-control {
   .work-shop-wrapper {
     margin: 0 30px;
   }
-  .home {
-    height: 100%;
-  }
+
   .home-wrapper.container {
     padding: 130px 0 150px;
   }
@@ -1478,14 +1485,9 @@ select.form-control {
   .main-sponsor img:last-child {
       max-height: 32px;
   }
-  .home {
-    height: 100%;
-  }
+
   .home-wrapper.container {
       margin: 50px 0;
-  }
-  main {
-    overflow-x: hidden;
   }
 
   .main-block {
@@ -1687,7 +1689,9 @@ select.form-control {
   .navbar-menu-sticky {
     display: none;
   }
-
+  .registration>.line {
+    display: none;
+  }
   .navbar {
     position: fixed;
     top: 0;

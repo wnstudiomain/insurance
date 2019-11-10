@@ -19,6 +19,9 @@
             img: '/partners/donat.svg'
           },
           {
+            img: '/partners/dodo.svg'
+          },
+          {
             img: '/partners/fabrika.png'
           },
           {
