@@ -441,6 +441,9 @@ p.about-subtitle {
   align-items: flex-start;
   text-align: left;
 }
+.for-items .for-item:hover img {
+  transform: translateY(-2px);
+}
 
 .for-items .for-item h3 {
   font-size: 22px;
@@ -463,6 +466,7 @@ p.about-subtitle {
 .for-items .for-item img {
   width: 64px;
   height: 64px;
+  transition: all 250ms;
 }
 
 .schedule {
