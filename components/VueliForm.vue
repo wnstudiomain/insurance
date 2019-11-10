@@ -1,5 +1,7 @@
 <template>
-  <form @submit.prevent="onSubmit" class="form">
+<div  class="form">
+   <h2>Регистрация</h2>
+   <form @submit.prevent="onSubmit">
     <div class="form-block">
       <div class="form-input" :class="{ error: $v.name.$error }">
         <div class="field required">
@@ -8,7 +10,7 @@
           <label>Ваше имя</label>
           <span class="focus-border"></span>
         </div>
-        <p class="help is-danger error-message" v-if="$v.name.required">Это поле обязательно для заполнения</p>
+        <p class="help is-danger error-message" v-if="!$v.name.required">Это поле обязательно для заполнения</p>
       </div>
       <div class="form-input">
         <div class="field">
@@ -40,8 +42,9 @@
     <div class="form-block">
       <div class="form-input" :class="{ error: $v.phone.$error }">
         <div class="field required">
-          <input class="form-control" :class="{ 'hasValue':this.phone }" type="tel" name="phone"
+          <input class="form-control phone-input" :class="{ 'hasValue':this.phone }" type="tel" name="phone"
             v-model.trim="$v.phone.$model" v-mask="'(###) ### - ## - ##'" />
+          <span>+7</span>
           <label>Телефон</label>
           <span class="focus-border"></span>
         </div>
@@ -91,6 +94,8 @@
     </p>
       </div>
   </form>
+</div>
+
 </template>
 
 <script>
@@ -136,7 +141,9 @@
         this.$v.$touch()
         if (this.$v.$anyError) {
 				return
-			}
+      }
+        let phonePrefix = "+7 "
+        phonePrefix += this.phone
         let formData = new FormData();
         formData.append('name', this.name);
         formData.append('email', this.email);
@@ -144,7 +151,8 @@
         formData.append('post', this.post);
         formData.append('company', this.company);
         formData.append('experience', this.experience);
-        formData.append('interests', this.interests);
+        formData.append('interests', phonePrefix);
+        formData.append('url', window.location.href);
         console.log( formData );
         await this.$axios.post('http://hunter.wnstudio.ru/api/lead-feedback.php', formData, {
 				  headers: {
@@ -152,10 +160,11 @@
 				  }
 			  }).then((response) => {
           console.log(response)
+          window.location.href = 'thanks'
         }).catch((error) => {
             console.log(error);
         });
-      }
+      },
       }
   };
 

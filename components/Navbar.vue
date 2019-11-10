@@ -15,29 +15,30 @@
         </div>
         <div id="navbarBasicExample" class="navbar-menu" :class="classObject">
           <div class="navbar-start">
-            <a href="#" v-scroll-to="'#about'" class="navbar-item">
+            <a href="#" v-scroll-to="'#about'" class="navbar-item" @click="open=!open">
               О встрече
             </a>
-            <a href="#" v-scroll-to="'#schedule'" class="navbar-item">
+            <a href="#" v-scroll-to="'#schedule'" class="navbar-item" @click="open=!open">
               программа
             </a>
-            <a href="#" v-scroll-to="'#game'" class="navbar-item">
+            <a href="#" v-scroll-to="'#game'" class="navbar-item" @click="open=!open">
               бизнес-игра
             </a>
-            <a href="#" v-scroll-to="'#workshop'" class="navbar-item">
+            <a href="#" v-scroll-to="'#workshop'" class="navbar-item" @click="open=!open">
               Мастерская
             </a>
-            <a href="#" v-scroll-to="'#speakers'" class="navbar-item">
+            <a href="#" v-scroll-to="'#speakers'" class="navbar-item" @click="open=!open">
               Спикеры
             </a>
           </div>
           <div class="navbar-end">
-            <a herf="tel:+7 499 999-90-90" class="navbar-item">
-              +7 499 999-90-90
+            <a herf="tel:+7 967 231-11-88" class="navbar-item">
+              +7 967 231-11-88
             </a>
           </div>
         </div>
       </div>
+      <div class="overlay" @click="open=!open" :class="open?'show':''"></div>
     </div>
     <div class="navbar navbar-menu-sticky" id="navbar-sticky">
       <div class="container">

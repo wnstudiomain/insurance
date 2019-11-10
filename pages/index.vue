@@ -23,16 +23,16 @@
             <span>Бизнес-субботник</span>«Управление со смыслом»
           </h1>
           <p class="sub-title">
-            Прокачай свои управленческие навыки. Будь среди лидеров изменений. Количество мест ограничено.
+            Прокачай свои управленческие навыки<span><span>. </span>Будь среди лидеров изменений</span>
           </p>
           <div class="buttons">
-            <a href="#" v-scroll-to="'#registration'" class="button main-button">Принять участие!</a>
+            <a href="#" v-scroll-to="'#registration'" class="button main-button">Участвовать</a>
           </div>
-                     <div class="main-sponsor">
-              <img src="~/assets/img/sponsor2-m.png" />
-              <img src="~/assets/img/sponsor3-m.png" />
-              <img src="~/assets/img/keaz-m.svg" />
-            </div>
+          <div class="main-sponsor">
+            <img src="~/assets/img/sponsor2-m.png" />
+            <img src="~/assets/img/sponsor3-m.png" />
+            <img src="~/assets/img/keaz-m.svg" />
+          </div>
         </div>
       </div>
     </section>
@@ -44,11 +44,12 @@
           </h2>
           <p class="subtitle about-subtitle">
             Бизнес-субботник "Управление со смыслом"
-— это открытая площадка
-для ключевых руководителей компаний нашего города, для лидеров
-транcформаций и изменений, для проактивных управленцев
+            — это открытая площадка
+            для ключевых руководителей компаний нашего города, для лидеров
+            транcформаций и изменений, для проактивных управленцев
           </p>
           <p class="free">Участие бесплатное</p>
+          <span class="dedline">Количество мест ограничено</span>
         </div>
       </div>
     </section>
@@ -134,7 +135,7 @@
           <div class="schedule-items white">
             <div class="schedule-item item-top schedule-item__left-col">
               <p class="time">
-                9:00 - 9:45
+                9:30 - 10:00
               </p>
               <div class="circle">
                 <span class="elipse-1"></span>
@@ -144,14 +145,14 @@
             </div>
             <div class="schedule-item item-top schedule-item__right-col">
               <p>
-                Регистрация
+                Сбор гостей и регистрация участников
               </p>
             </div>
           </div>
           <div class="schedule-items orange">
             <div class="schedule-item schedule-item__left-col">
               <p class="time">
-                9:45 - 10:00
+                10:00 - 10:30
               </p>
               <div class="circle">
                 <span class="elipse-1"></span>
@@ -162,14 +163,15 @@
             <div class="schedule-item schedule-item__right-col">
               <div class="schedule-item__about">
                 <p>Открытие мероприятия</p>
-                <span>Ярослав Иванов</span>
+                <span>Ярослав Иванов, управляющий директор ГК КЭАЗ «Руководитель нового поколения: вызовы современного
+                  управления»</span>
               </div>
             </div>
           </div>
           <div class="schedule-items white">
             <div class="schedule-item schedule-item__left-col">
               <p class="time">
-                10:00 - 14:00
+                10:30 - 14:30
               </p>
               <div class="circle">
                 <span class="elipse-1"></span>
@@ -184,7 +186,7 @@
           <div class="schedule-items orange">
             <div class="schedule-item schedule-item__left-col">
               <p class="time">
-                15:00 - 18:00
+                14:30 - 15:30
               </p>
               <div class="circle">
                 <span class="elipse-1"></span>
@@ -193,10 +195,43 @@
               </div>
             </div>
             <div class="schedule-item schedule-item__right-col">
-              <p>Мастер-класс «Создание смыслов в управлении»</p>
+              <p>Перерыв</p>
             </div>
           </div>
           <div class="schedule-items white">
+            <div class="schedule-item schedule-item__left-col">
+              <p class="time">
+                15:00 - 18:00
+              </p>
+              <div class="circle">
+                <span class="elipse-1"></span>
+                <span class="elipse-2"></span>
+                <span class="elipse-3"></span>
+              </div>
+            </div>
+            <div class="master schedule-item schedule-item__right-col">
+              <p>Мастер-классы</p>
+              <ul>
+                <li>
+                  <span class="title-master">Зара Егиазарян</span>
+                  <span>«Создание смыслов в управлении ключевые тренды и технологии»</span>
+                </li>
+                <li>
+                  <span class="title-master">Дмитрий Коробка</span>
+                  <span>«Новые смыслы производства: от стояния у стоянка до инновационных разработок»</span>
+                </li>
+                <li>
+                  <span class="title-master">Ольга Панова</span>
+                  <span>«КЭАЗ: завод или все же люди: истинный смысл нашего бизнеса»</span>
+                </li>
+                <li>
+                  <span class="title-master">Ярослав Иванов</span>
+                  <span>«Управление смыслами при трансформации предприятия и ГК»</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="schedule-items orange">
             <div class="schedule-item last-item item-top schedule-item__left-col">
               <p class="time">
                 18:00 - 18:30
@@ -216,7 +251,7 @@
     </section>
     <section class="timer-block main-block">
       <div class="container">
-        <timer starttime="Nov 5, 2019 15:37:25" endtime="Dec 7, 2019 09:00:00"></timer>
+        <timer starttime="Nov 5, 2019 15:37:25" endtime="Dec 7, 2019 09:30:00"></timer>
       </div>
     </section>
     <section class="game main-block" id="game">
@@ -286,7 +321,7 @@
                 </div>
               </div>
               <div class="buttons">
-                <a href="#" v-scroll-to="'#registration'" class="button main-button">Принять участие!</a>
+                <a href="#" v-scroll-to="'#registration'" class="button main-button">Участвовать</a>
               </div>
             </div>
           </div>
@@ -485,10 +520,19 @@
             </div>
             <div class="column">
               <div class="speakers-wrapper">
-                <div class="speaker-2">
+                <div class="speaker-3">
                   <img src="~/assets/img/speaker-3.png" />
                   <h3>Дмитрий Коробка</h3>
                   <p>Директор по производству ГК КЭАЗ</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="speakers-wrapper">
+                <div class="speaker-4">
+                  <img src="~/assets/img/speaker-4.png" />
+                  <h3>Ольга Панова</h3>
+                  <p>Директор по персоналу ГК КЭАЗ</p>
                 </div>
               </div>
             </div>
@@ -523,9 +567,12 @@
         </div>
       </div>
     </section>
-    <section class="main-block" id="registration">
+    <section class="main-block registration" id="registration">
+     <div class="line">
+        <span></span>
+        <span></span>
+      </div>
       <div class="container">
-        <h2>Регистрация</h2>
         <vueliForm />
       </div>
     </section>
@@ -537,6 +584,9 @@
   import Timer from '~/components/Timer.vue'
   import VueliForm from '~/components/VueliForm.vue'
   export default {
+    head: {
+    title: 'Бизнес - субботник «Управление со смыслом»'
+  },
     components: {
       Faq,
       Slider,
